@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+/* font-family: 'Nunito Sans', sans-serif; */
+@font-face {
+  font-family: "Modulord";
+  src: url(font/Modulord.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "ava";
+  src: url(font/AVA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Atiba";
+  src: url(font/Atiba.ttf) format('truetype');
+}
+
+:root {
+  --app-height: 100%;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: fill-availbale;
+  height: -webkit-fill-available;
+  min-height: 100vh;
+  min-height: -moz-available;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -moz-available;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
   display: none;
+}
+
+a{
+  text-decoration: none;
+}
+html{
+  background-color: #edf2f4;
+  color: #343a40;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
 }

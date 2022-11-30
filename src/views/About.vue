@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import QuizPage from '@/components/QuizPage.vue';
 </script>
 
 <template>
-<div class="d-flex flex-column text">
-  ABOUT PAGE
+<div class="">
+  <QuizPage/>
 </div>
 </template>
 

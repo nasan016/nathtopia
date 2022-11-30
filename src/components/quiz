@@ -1,0 +1,86 @@
+import { ref } from "vue"
+
+export const choice1 = ref(0)
+export const choice2 = ref(0)
+export const choice3 = ref(0)
+export const choice4 = ref(0)
+
+export const questions = [
+    [
+        "When feeling stressed over a difficult situation, you...",
+        "Make a list of pros and cons, decide based on the evidence",
+        "Debate the issue",
+        "Create a work of art that expresses your feelings",
+        "Release tension through physical activities"
+    ],
+    [
+        "People would most likely describe you as ...",
+        "Smart, disciplined, level-headed",
+        "Intuitive, influential",
+        "Creative, emotional",
+        "Strong, protective, skillful"
+    ],
+    [
+        "Which of the following professions would you prefer?",
+        "Scientist",
+        "Judge",
+        "Painter",
+        "Construction Worker"
+    ],
+    [
+        "If you had a day off, which activity would you entertain yourself with?",
+        "Reading",
+        "Volunteering",
+        "Dancing, writing",
+        "Rock-climbing or skydiving"
+    ],
+    [
+        "When getting ready for the day, which of the following is most important to you to wear?",
+        "Something that is practical",
+        "Something that is trendy and stylish",
+        "Something that expresses my personality even if it's odd",
+        "Something that is comfortable and ergonomic"
+    ],
+    [
+        "The most important thing in life is ...",
+        "Success in work",
+        "Seeking the truth in all things",
+        "Happiness",
+        "Leaving a lasting legacy and making developments"
+    ],
+    [
+        "How do you prefer to take in information?",
+        "Focus on the facts and the reality of the situation",
+        "Enjoy concepts and ideas for their own sake",
+        "Imagine the possiblities of how things could be",
+        "Prefer ideas that have practical applications"
+    ],
+    [
+        "How do you prefer to live your outer life?",
+        "Prefer to have matters settled",
+        "Like to improvise and make things up as you go",
+        "See rules and deadlines as flexible",
+        "Spontaneous, enjoy new experiences"
+    ],
+    [
+        "If you were running out of time on an important project what would you do?",
+        "Focus on the project, pick up the pace",
+        "Reach out to colleagues for assistance",
+        "Come up with a creative solution",
+        "Request a deadline extension"
+    ],
+    [
+        "How do you prefer to make decisions",
+        "In an impersonal way, use logical reasoning",
+        "Base decisions on personal values, and how your actions affect others",
+        "Make decisions based on an ideal scenario",
+        "In a straightforward manner, working through problems"
+    ],
+    [
+        "What do you value the most?",
+        "Knowledge",
+        "Integrity",
+        "Creativity",
+        "Health"
+    ]
+]

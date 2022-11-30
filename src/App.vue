@@ -2,41 +2,59 @@
 </script>
 
 <template>
-<div>
-  <div class="navbar d-flex justify-end">
-    <router-link to="/"  class="title justify-start" style="text-decoration: none; color: inherit;">
-      <div v-ripple>
-        APP 
-      <v-divider vertical/>  
-      </div>
-    </router-link>
-    <router-link to="/ERROR"  style="text-decoration: none; color: inherit;">
-      <div v-ripple>
-        ERROR 
-      <v-divider vertical/>  
-      </div>
-    </router-link>
-    <router-link to="/about"  style="text-decoration: none; color: inherit;">
-    <div v-ripple>
-      ABOUT 
-    <v-divider vertical/>  
+  <div class="main d-flex justify-center align-center flex-column">
+    <div class="router-view pa-4 d-flex flex-column justify-space-between">
+        <router-view/>
     </div>
-  </router-link>
   </div>
-  <div class="d-flex justify-center">
-    <div class="d-flex align-center justify-center routerContainer">
-      <router-view v-slot="{Component}">
-      <transition name="slide-fade" mode="out-in">
-        <component :is="Component"/>
-      </transition>
-      </router-view>
-    </div>
-
-  </div>
-</div>
 </template>
 
-<style>
-@import './assets/base.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+<style scoped>
+.slide-fade-enter-active {
+  transition: all 0.8s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  -webkit-opacity: 0;
+  opacity: 0;
+}
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  padding: 40px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.router-view{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .router-view{
+    width: 100%;
+    height: 100%;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .main{
+    height: 90vh;
+    width: 100vw;
+    padding: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
 </style>
